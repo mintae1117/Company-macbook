@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script id="newploy.plugin" src="https://newploy-profile.s3.ap-northeast-2.amazonaws.com/floating/newploy.plugin.js"></script>
+
+    <script>
+      (() => {
+          plugin({
+              storeId: 'newploy',
+              buttonOption: {
+                  showLauncher: true,
+                  zIndex: 10,
+                  bottom: 25,
+                  right: 25,
+              },
+          });
+      })();
+  </script>
+  
     <title>Vite + React + TS</title>
   </head>
   <body>
@@ -11,3 +27,46 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+
+<html>
+
+<!-- 
+<head>
+    <script id="newploy.plugin" src="https://newploy-profile.s3.ap-northeast-2.amazonaws.com/floating/newploy.plugin.js"></script>
+    <script id="newploy.contact" src="newploy.plugin.js"></script>
+
+
+    <script>
+        (() => {
+            plugin({
+                storeId: 'newploy',
+                buttonOption: {
+                    showLauncher: true,
+                    zIndex: 10,
+                    bottom: 25,
+                    right: 25,
+                },
+            });
+        })();
+    </script>
+    <script>
+        (() => {
+            plugin2({
+                storeId: 'contact',
+                buttonOption: {
+                    showLauncher: true,
+                    zIndex: 10,
+                    bottom: 120,
+                    right: 25,
+                },
+            });
+        })();
+    </script>
+
+</head>
+
+<body>
+    mintae test
+</body>
+
+</html> -->
